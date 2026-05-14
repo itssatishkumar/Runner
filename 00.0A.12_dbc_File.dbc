@@ -1,0 +1,152 @@
+VERSION ""
+
+
+BS_:
+
+BU_:
+
+
+BO_ 2554393600 IgnitionOFF: 8 Vector__XXX
+ SG_ Ignition_Off_Command : 0|8@1- (1,0) [-128|127] "" Vector__XXX
+
+BO_ 262 SoC_Ack: 8 Vector__XXX
+ SG_ SoC_Ack : 0|8@1- (1,0) [0|1] "" Vector__XXX
+
+BO_ 608 AB_Error_Codes_1: 8 Vector__XXX
+ SG_ EEPROM_SHADOW_WRITE_FAIL : 0|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ EEPROM_META_WRITE_FAIL : 1|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ EEPROM_SHADOW_READ_FAIL : 2|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ EEPROM_META_READ_FAIL : 3|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ CCM_FAIL : 4|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ CMU_FAIL : 5|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ ActiveErrorGroup1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ActiveErrorGroup2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ HardFaultPresent : 6|1@1- (1,0) [0|1] "" Vector__XXX
+
+BO_ 1542 AuxVoltage: 8 Vector__XXX
+ SG_ AuxVoltage : 15|16@0+ (0.01,0) [0|655.35] "V" Vector__XXX
+
+BO_ 1538 Vehicle_State: 8 Vector__XXX
+ SG_ VehicleState : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Charging_Info : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1954 Short_Circuit_Detect: 8 Vector__XXX
+ SG_ SCD_Flag : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 302 IR_PARAM_1: 4 Vector__XXX
+ SG_ IR_Value : 0|32@1- (10000,0) [-2.14748e+013|2.14748e+013] "" Vector__XXX
+
+BO_ 300 DG_voltageData: 8 Vector__XXX
+ SG_ Voltage_Max : 0|16@1+ (0.1,0) [0|6553.5] "mV" Vector__XXX
+ SG_ Voltage_Min : 16|16@1+ (0.1,0) [0|6553.5] "mV" Vector__XXX
+ SG_ Voltage_Delta : 32|16@1+ (0.1,0) [0|6553.5] "mV" Vector__XXX
+ SG_ Contactor_Command : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 263 AC_ChargerID: 8 Vector__XXX
+ SG_ ChargerCurrent : 23|16@0+ (0.1,0) [0|6553.5] "Amps" Vector__XXX
+ SG_ ChargerVoltage : 7|16@0+ (0.1,0) [0|6553.5] "" Vector__XXX
+
+BO_ 342 BC_Dynamic_inst: 8 Vector__XXX
+ SG_ dynamicLimitOut_Inst : 16|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
+ SG_ dynamicLimitIn_Inst : 0|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+
+BO_ 298 BB_Dynamic_Limits: 7 Vector__XXX
+ SG_ ConfigID : 48|8@1- (1,0) [-128|127] "" Vector__XXX
+ SG_ dynamicLimit_OUT : 16|16@1- (0.1,3) [-3273.8|3276.7] "A" Vector__XXX
+ SG_ dynamicLimit_IN : 0|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
+ SG_ FW_MINOR : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ FW_PATCH : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 279 DE_CMU2_Cell_Voltages_5_to_8: 8 Vector__XXX
+ SG_ CMU2_CV_8 : 48|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU2_CV_7 : 32|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU2_CV_6 : 16|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU2_CV_5 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 299 BF_CCM_CMU_Counter: 8 Vector__XXX
+ SG_ mcu_counter : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ cycleCount : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 301 CD_PCB_Temps: 8 Vector__XXX
+ SG_ PCB_slave1_T1 : 0|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ PCB_slave2_T3 : 40|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ PCB_slave2_T2 : 32|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ PCB_slave2_T1 : 24|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ PCB_slave1_T3 : 16|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ PCB_slave1_T2 : 8|8@1+ (1,0) [0|255] "C" Vector__XXX
+
+BO_ 280 DF_CMU2_Cell_Voltages_9_to_12: 8 Vector__XXX
+ SG_ CMU2_CV_9 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 278 DD_CMU2_Cell_Voltages_1_to_4: 8 Vector__XXX
+ SG_ CMU2_CV_4 : 48|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU2_CV_3 : 32|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU2_CV_2 : 16|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU2_CV_1 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 277 DC_CMU1_Cell_Voltages_9_to_12: 8 Vector__XXX
+ SG_ CMU1_CV_9 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 276 DB_CMU1_Cell_Voltages_5_to_8: 8 Vector__XXX
+ SG_ CMU1_CV_8 : 48|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU1_CV_7 : 32|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU1_CV_6 : 16|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU1_CV_5 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 275 DA_CMU1_Cell_Voltages_1_to_4: 8 Vector__XXX
+ SG_ CMU1_CV_4 : 48|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU1_CV_3 : 32|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU1_CV_2 : 16|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU1_CV_1 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 274 CB_PCa_And_Temperature_Info: 8 Vector__XXX
+ SG_ Pack_Capacity : 48|16@1- (0.01,0) [-327.68|327.67] "Ah" Vector__XXX
+ SG_ Thermistor_6 : 40|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ Thermistor_5 : 32|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ Thermistor_4 : 24|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ Thermistor_3 : 16|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ Thermistor_2 : 8|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ Thermistor_1 : 0|8@1+ (1,0) [0|255] "C" Vector__XXX
+
+BO_ 272 AC_Batt_Param_3: 8 Vector__XXX
+ SG_ Balancing_Limit : 0|16@1+ (0.1,0) [0|4200] "mV" Vector__XXX
+ SG_ Pack_Current : 32|32@1- (1e-005,0) [-1000|1000] "A" Vector__XXX
+ SG_ Flag_Balancing_Active : 24|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Flag_Precharge_Active : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 265 AA_Batt_Param_2: 8 Vector__XXX
+ SG_ BMS_State : 32|8@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ Flag_Fully_Charged : 40|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Pack_Voltage : 48|16@1+ (0.1,0) [60|85] "V" Vector__XXX
+ SG_ SoH : 16|16@1+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ SoC : 0|16@1+ (0.01,0) [0|100] "%" Vector__XXX
+
+BO_ 600 AB_Error_Codes: 2 Vector__XXX
+ SG_ OCC_ERROR : 0|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ HIGH_IMBALANCE_ERROR : 1|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ PCB_TEMP_ERROR : 2|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ EXT_TEMP_ERROR : 3|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ EFUSE_DISCHG_ERROR : 4|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ EFUSE_CHG_ERROR : 5|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ UV_ERROR : 6|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ OV_ERROR : 7|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ OCD_ERROR : 8|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ EEPROM_WRITE_FAIL : 10|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ EEPROM_READ_FAIL : 11|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ PERMANENT_FAIL : 12|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ PRECHARGE_FAIL : 13|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ EEPROM_CORRUPTED : 14|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ EEPROM_COMM_FAIL : 15|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ FLASH_WRITE_FAIL : 9|1@1- (1,0) [0|1] "" Vector__XXX
+
+BO_ 601 Critical_Error: 8 Vector__XXX
+ SG_ SCD_ERROR : 7|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ THERMAL_RUNAWAY : 6|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ StartupSanityFail : 5|1@1- (1,0) [0|1] "" Vector__XXX
+
+BO_ 1813 Controller: 8 Vector__XXX
+ SG_ Bus_Voltage : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+
+
+
+
