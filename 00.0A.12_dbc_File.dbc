@@ -5,13 +5,6 @@ BS_:
 
 BU_:
 
-
-BO_ 2554393600 IgnitionOFF: 8 Vector__XXX
- SG_ Ignition_Off_Command : 0|8@1- (1,0) [-128|127] "" Vector__XXX
-
-BO_ 262 SoC_Ack: 8 Vector__XXX
- SG_ SoC_Ack : 0|8@1- (1,0) [0|1] "" Vector__XXX
-
 BO_ 608 AB_Error_Codes_1: 8 Vector__XXX
  SG_ EEPROM_SHADOW_WRITE_FAIL : 0|1@1- (1,0) [0|1] "" Vector__XXX
  SG_ EEPROM_META_WRITE_FAIL : 1|1@1- (1,0) [0|1] "" Vector__XXX
@@ -23,12 +16,6 @@ BO_ 608 AB_Error_Codes_1: 8 Vector__XXX
  SG_ ActiveErrorGroup2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ HardFaultPresent : 6|1@1- (1,0) [0|1] "" Vector__XXX
 
-BO_ 1542 AuxVoltage: 8 Vector__XXX
- SG_ AuxVoltage : 15|16@0+ (0.01,0) [0|655.35] "V" Vector__XXX
-
-BO_ 1538 Vehicle_State: 8 Vector__XXX
- SG_ VehicleState : 56|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ Charging_Info : 48|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 1954 Short_Circuit_Detect: 8 Vector__XXX
  SG_ SCD_Flag : 56|8@1+ (1,0) [0|255] "" Vector__XXX
@@ -138,15 +125,6 @@ BO_ 600 AB_Error_Codes: 2 Vector__XXX
  SG_ EEPROM_CORRUPTED : 14|1@1- (1,0) [0|1] "" Vector__XXX
  SG_ EEPROM_COMM_FAIL : 15|1@1- (1,0) [0|1] "" Vector__XXX
  SG_ FLASH_WRITE_FAIL : 9|1@1- (1,0) [0|1] "" Vector__XXX
-
-BO_ 601 Critical_Error: 8 Vector__XXX
- SG_ SCD_ERROR : 7|1@1- (1,0) [0|1] "" Vector__XXX
- SG_ THERMAL_RUNAWAY : 6|1@1- (1,0) [0|1] "" Vector__XXX
- SG_ StartupSanityFail : 5|1@1- (1,0) [0|1] "" Vector__XXX
-
-BO_ 1813 Controller: 8 Vector__XXX
- SG_ Bus_Voltage : 32|8@1+ (1,0) [0|255] "" Vector__XXX
-
 
 
 
